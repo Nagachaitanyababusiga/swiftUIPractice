@@ -60,8 +60,43 @@ struct ButtonView: View{
 }
 
 
+struct CardView: View{
+    
+    var body: some View{
+        VStack{
+            Text("Heading Title")
+                .font(.headline)
+            
+            Text("This is card component that can be used anywhere")
+                .font(.subheadline)
+        }
+            .padding()
+            .background(Color(.systemGray6))
+            .cornerRadius(12)
+            .shadow(radius: 5)
+            .padding()
+    }
+    
+}
+
+struct HomeCard: View{
+    var title: String
+    var color: Color = .green
+    var body: some View{
+        Text(title)
+            .font(.headline)
+            .foregroundColor(.white)
+            .padding(20)
+            .frame(maxWidth: .infinity)
+            .background(color)
+            .cornerRadius(12)
+            .shadow(radius: 5)
+    }
+}
+
 #Preview {
-    ButtonView()
+    // CardView()
+    HomeCard(title: "Fresh title", color: .green)
 }
 
 
