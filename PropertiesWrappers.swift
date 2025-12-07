@@ -96,6 +96,7 @@ struct EnvironmentObjectView: View{
 
 /*
  @State is used to maintain a storage within the view
+ @StateObject is used to mainpulate the state of intaiated class
  @Binding to use/manipulate the state of other struct/view which is a parent view
  @ObservableObject is used to declare a class which stores some date that can be accessable within a struct
  @Published is used to declare the variable that is useful in observable object

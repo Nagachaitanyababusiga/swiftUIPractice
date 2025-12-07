@@ -12,7 +12,7 @@ internal import Combine
 struct PracticeSwiftApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ToDoApp()
         }
     }
 }
