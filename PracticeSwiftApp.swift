@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+internal import Combine
 
 @main
 struct PracticeSwiftApp: App {
@@ -14,4 +15,10 @@ struct PracticeSwiftApp: App {
             ContentView()
         }
     }
+}
+
+
+//Environment object
+class EnvironmentStorage: ObservableObject{
+    @Published var theme: String = "Light"
 }
